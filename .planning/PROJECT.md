@@ -22,10 +22,11 @@ Visitors immediately understand the service (old site → modern site, under an 
 - ✓ Scroll animations with reduced-motion respect — v1.0
 - ✓ Spam protection (honeypot + Turnstile) — v1.0
 - ✓ React.lazy code splitting for performance — v1.0
+- ✓ Real before/after screenshots replace placeholder cards on Work page — v1.1
 
 ### Active
 
-- [ ] Real before/after screenshots replace placeholder cards on Work page — v1.1
+(None — no active milestone)
 
 ### Out of Scope
 
@@ -40,7 +41,7 @@ Visitors immediately understand the service (old site → modern site, under an 
 Shipped v1.0 with 907 LOC TypeScript/TSX/CSS, 78 tests.
 Tech stack: Vite 6, React 19, React Router 7, Tailwind CSS v4, Motion, Formspree, Netlify.
 
-**Current state:** All 4 pages functional (Home, Work, About, Contact). Portfolio clients confirmed permission — ready for real screenshots. Contact form requires Formspree + Turnstile env vars on Netlify for production.
+**Current state:** All 4 pages functional (Home, Work, About, Contact). Portfolio compare sliders active with real before/after screenshots for both clients. Contact form requires Formspree + Turnstile env vars on Netlify for production.
 
 **Known issues:**
 - LEAD-02 (email delivery) and FOUND-05 (Lighthouse 90+) approved but need post-deploy production verification
@@ -66,16 +67,8 @@ Tech stack: Vite 6, React 19, React Router 7, Tailwind CSS v4, Motion, Formspree
 | Facade pattern for Calendly | Saves ~200KB JS from blocking page load | ✓ Good |
 | MotionConfig at root | Single-point reduced-motion respect for all animations | ✓ Good |
 | React.lazy route splitting | Contact page heaviest JS isolated from initial bundle | ✓ Good |
+| Playwright for screenshot capture | Consistent viewport, reproducible, no manual work | ✓ Good |
+| WebP @ 80% quality, 1280x720 | Small files (19-151KB), no visible quality loss in slider | ✓ Good |
 
 ---
-## Current Milestone: v1.1 Portfolio Screenshots
-
-**Goal:** Replace placeholder portfolio cards with real before/after screenshots for confirmed clients.
-
-**Target features:**
-- Capture before/after screenshots for Liat Leshem and Bialystok Association
-- Optimize images for web (WebP, proper sizing)
-- Flip permissionConfirmed flags to activate compare sliders
-
----
-*Last updated: 2026-03-04 after v1.1 milestone start*
+*Last updated: 2026-03-04 after v1.1 milestone complete*

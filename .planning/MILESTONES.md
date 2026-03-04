@@ -1,5 +1,17 @@
 # Milestones
 
+## v1.1 Portfolio Screenshots (Shipped: 2026-03-04)
+
+**Phases completed:** 1 phase, 1 plan, 3 tasks
+**Stats:** 5 files changed, 4 WebP images (278KB total)
+
+**Key accomplishments:**
+1. Real before/after WebP screenshots captured via Playwright for Liat Leshem and Bialystok Association
+2. All images optimized at 1280x720 WebP @ 80% quality (19KB–151KB per image)
+3. Compare sliders activated on Work page — drag, keyboard, and touch accessible
+
+---
+
 ## v1.0 MVP (Shipped: 2026-03-04)
 
 **Phases completed:** 4 phases, 10 plans, 20 tasks
