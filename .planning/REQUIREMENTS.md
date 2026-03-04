@@ -8,9 +8,9 @@
 ### Foundation
 
 - [x] **FOUND-01**: Site uses dark premium theme with WCAG 4.5:1 contrast ratios on all text
-- [ ] **FOUND-02**: Site is fully responsive across mobile, tablet, and desktop
-- [ ] **FOUND-03**: Global navigation with links to all pages (Home, Work, About, Contact)
-- [ ] **FOUND-04**: Consistent footer with contact info and social links
+- [x] **FOUND-02**: Site is fully responsive across mobile, tablet, and desktop
+- [x] **FOUND-03**: Global navigation with links to all pages (Home, Work, About, Contact)
+- [x] **FOUND-04**: Consistent footer with contact info and social links
 - [ ] **FOUND-05**: Page load scores ≥90 on Lighthouse mobile performance
 
 ### Hero & Home
@@ -43,11 +43,11 @@
 
 ### SEO
 
-- [ ] **SEO-01**: Unique, keyword-targeted title and meta description on every page
+- [x] **SEO-01**: Unique, keyword-targeted title and meta description on every page
 - [ ] **SEO-02**: Open Graph tags and OG images for social sharing
 - [ ] **SEO-03**: JSON-LD structured data (Service schema) on homepage
 - [x] **SEO-04**: XML sitemap and robots.txt generated automatically
-- [ ] **SEO-05**: Semantic HTML throughout (proper heading hierarchy, landmarks)
+- [x] **SEO-05**: Semantic HTML throughout (proper heading hierarchy, landmarks)
 
 ### About
 

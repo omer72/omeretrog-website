@@ -7,13 +7,13 @@
 
 ## Current Position
 
-- Phase: 1 of 4
-- Current Plan: 2 of 2 (in Phase 1)
-- Status: Phase 1 Plan 1 complete, ready for Plan 2
+- Phase: 2 of 4
+- Current Plan: 1 (in Phase 2)
+- Status: Phase 1 complete, ready for Phase 2
 
 ## Progress
 
-[█░░░░░░░░░] 12%
+[███░░░░░░░] 25%
 
 ## Recent Decisions
 
@@ -26,6 +26,9 @@
 - 2026-03-04: All color token contrast ratios pre-verified and documented inline
 - 2026-03-04: Stack switched from Astro to Vite + React SPA (per earlier refactor decision)
 - 2026-03-04: Added vitest/config triple-slash reference to resolve TS error with test config in vite.config.ts
+- 2026-03-04: Used React 19 native title/meta hoisting instead of react-helmet for per-page SEO
+- 2026-03-04: NavLink end prop on Home route to prevent false active state
+- 2026-03-04: Skip-to-content link in RootLayout for accessibility
 
 ## Pending Todos
 
@@ -33,7 +36,7 @@
 - Obtain written permission from bialystoksite.netlify.app client before displaying their site in portfolio
 - Confirm react-compare-slider accepts Astro `<Image />` component as image source (Phase 3 research flag)
 - Confirm Calendly/Cal.com embed pattern for Astro static pages (Phase 4 research flag)
-- Write keyword-targeted SEO titles and meta descriptions per page before Phase 1 planning
+- ~~Write keyword-targeted SEO titles and meta descriptions per page before Phase 1 planning~~ (DONE in 01-02)
 
 ## Blockers / Concerns
 
@@ -42,5 +45,5 @@
 ## Session Continuity
 
 Last session: 2026-03-04
-Stopped at: Executed 01-01-PLAN.md (scaffold + tests), ready for 01-02-PLAN.md
-Resume file: .planning/phases/01-foundation-design-system/01-02-PLAN.md
+Stopped at: Completed 01-02-PLAN.md (layout, nav, pages, SEO) — Phase 1 fully complete
+Resume file: .planning/phases/02-*/02-01-PLAN.md

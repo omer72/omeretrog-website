@@ -11,7 +11,7 @@
 
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
-| 1 | Foundation & Design System | FOUND-01, FOUND-02, FOUND-03, FOUND-04, SEO-01, SEO-04, SEO-05 | Planning complete |
+| 1 | Foundation & Design System | FOUND-01, FOUND-02, FOUND-03, FOUND-04, SEO-01, SEO-04, SEO-05 | Complete |
 | 2 | Core Pages & Content | HERO-01, HERO-02, HERO-03, HERO-04, TEST-01, TEST-02, TEST-03, ABOUT-01, ABOUT-02, SEO-02, SEO-03 | Not started |
 | 3 | Portfolio Showcase | PORT-01, PORT-02, PORT-03, PORT-04 | Not started |
 | 4 | Lead Generation, Polish & Launch | LEAD-01, LEAD-02, LEAD-03, LEAD-04, LEAD-05, ANIM-01, ANIM-02, ANIM-03, FOUND-05 | Not started |
@@ -46,7 +46,7 @@
 
 Plans:
 - [x] 01-01-PLAN.md — Bootstrap Vite + React project with Tailwind v4 design token system and test infrastructure
-- [ ] 01-02-PLAN.md — Layout system (Nav, Footer, RootLayout), page stubs with SEO metadata, router, sitemap, robots.txt
+- [x] 01-02-PLAN.md — Layout system (Nav, Footer, RootLayout), page stubs with SEO metadata, router, sitemap, robots.txt
 
 **Pitfall prevention:**
 - Dark theme contrast (Pitfall 1): Define all color tokens as CSS custom properties in the Tailwind v4 config with contrast ratios recorded alongside each pair before building any component. Use near-black (`#111111`) not pure black to avoid halation.
@@ -151,7 +151,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Design System | 1/2 | In progress | - |
+| 1. Foundation & Design System | 2/2 | Complete | 2026-03-04 |
 | 2. Core Pages & Content | 0/? | Not started | - |
 | 3. Portfolio Showcase | 0/? | Not started | - |
 | 4. Lead Generation, Polish & Launch | 0/? | Not started | - |
@@ -163,13 +163,13 @@ Plans:
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUND-01 | 1 | Complete |
-| FOUND-02 | 1 | Pending |
-| FOUND-03 | 1 | Pending |
-| FOUND-04 | 1 | Pending |
+| FOUND-02 | 1 | Complete |
+| FOUND-03 | 1 | Complete |
+| FOUND-04 | 1 | Complete |
 | FOUND-05 | 4 | Pending |
-| SEO-01 | 1 | Pending |
+| SEO-01 | 1 | Complete |
 | SEO-04 | 1 | Complete |
-| SEO-05 | 1 | Pending |
+| SEO-05 | 1 | Complete |
 | HERO-01 | 2 | Pending |
 | HERO-02 | 2 | Pending |
 | HERO-03 | 2 | Pending |
