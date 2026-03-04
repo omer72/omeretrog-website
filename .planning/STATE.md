@@ -3,7 +3,7 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 03-01-PLAN.md (PortfolioItem component + slider)
+stopped_at: 03-02 Task 1 complete — checkpoint:human-verify at /work route pending
 last_updated: "2026-03-04T12:21:00.000Z"
 progress:
   total_phases: 4
@@ -22,8 +22,8 @@ progress:
 ## Current Position
 
 - Phase: 3 of 4
-- Current Plan: 1 of 2 (in Phase 3)
-- Status: Phase 3 plan 1 complete
+- Current Plan: 2 of 2 (in Phase 3) — awaiting human-verify checkpoint
+- Status: Phase 3 plan 2 task 1 complete; checkpoint:human-verify pending
 
 ## Progress
 
@@ -48,6 +48,8 @@ progress:
 - 2026-03-04: react-compare-slider renders button[role=slider] with its own built-in aria-label; custom label goes on outer div container
 - 2026-03-04: Both portfolio items start with permissionConfirmed: false — placeholder card renders until written permission obtained
 - 2026-03-04: ResizeObserver polyfill added to tests/setup.ts for react-compare-slider jsdom compatibility
+- 2026-03-04: WorkPage kept as thin composer under 30 lines — maps portfolioItems over PortfolioItem, no business logic
+- 2026-03-04: Mock react-compare-slider at page-level tests (vi.mock) to isolate WorkPage composition from slider internals
 
 ## Pending Todos
 
@@ -63,6 +65,6 @@ progress:
 
 ## Session Continuity
 
-Last session: 2026-03-04T12:21:00.000Z
-Stopped at: Completed 03-01-PLAN.md (PortfolioItem component + slider)
+Last session: 2026-03-04T10:28:00.000Z
+Stopped at: 03-02 Task 1 complete — checkpoint:human-verify at /work route pending
 Resume file: None
