@@ -11,7 +11,7 @@
 - [x] **FOUND-02**: Site is fully responsive across mobile, tablet, and desktop
 - [x] **FOUND-03**: Global navigation with links to all pages (Home, Work, About, Contact)
 - [x] **FOUND-04**: Consistent footer with contact info and social links
-- [ ] **FOUND-05**: Page load scores ≥90 on Lighthouse mobile performance
+- [x] **FOUND-05**: Page load scores ≥90 on Lighthouse mobile performance
 
 ### Hero & Home
 
@@ -36,7 +36,7 @@
 ### Contact & Lead Generation
 
 - [x] **LEAD-01**: Contact page with inquiry form (name, email, message, current site URL)
-- [ ] **LEAD-02**: Form submissions delivered to Omer's email reliably (end-to-end verified)
+- [x] **LEAD-02**: Form submissions delivered to Omer's email reliably (end-to-end verified)
 - [x] **LEAD-03**: Spam protection on contact form (honeypot + invisible challenge)
 - [x] **LEAD-04**: Embedded booking calendar (Calendly or Cal.com) on contact page
 - [x] **LEAD-05**: Form shows success/error confirmation states
@@ -97,7 +97,7 @@
 | FOUND-02 | Phase 1 | Pending |
 | FOUND-03 | Phase 1 | Pending |
 | FOUND-04 | Phase 1 | Pending |
-| FOUND-05 | Phase 5 | Pending |
+| FOUND-05 | Phase 5 | Complete |
 | HERO-01 | Phase 2 | Complete |
 | HERO-02 | Phase 2 | Complete |
 | HERO-03 | Phase 2 | Complete |
@@ -110,7 +110,7 @@
 | TEST-02 | Phase 2 | Complete |
 | TEST-03 | Phase 2 | Complete |
 | LEAD-01 | Phase 4 | Complete |
-| LEAD-02 | Phase 4 | Pending |
+| LEAD-02 | Phase 4 | Complete |
 | LEAD-03 | Phase 4 | Complete |
 | LEAD-04 | Phase 4 | Complete |
 | LEAD-05 | Phase 4 | Complete |
