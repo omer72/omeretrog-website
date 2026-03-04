@@ -11,7 +11,7 @@
 
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
-| 1 | Foundation & Design System | FOUND-01, FOUND-02, FOUND-03, FOUND-04, SEO-01, SEO-04, SEO-05 | Not started |
+| 1 | Foundation & Design System | FOUND-01, FOUND-02, FOUND-03, FOUND-04, SEO-01, SEO-04, SEO-05 | Planning complete |
 | 2 | Core Pages & Content | HERO-01, HERO-02, HERO-03, HERO-04, TEST-01, TEST-02, TEST-03, ABOUT-01, ABOUT-02, SEO-02, SEO-03 | Not started |
 | 3 | Portfolio Showcase | PORT-01, PORT-02, PORT-03, PORT-04 | Not started |
 | 4 | Lead Generation, Polish & Launch | LEAD-01, LEAD-02, LEAD-03, LEAD-04, LEAD-05, ANIM-01, ANIM-02, ANIM-03, FOUND-05 | Not started |
@@ -45,12 +45,12 @@
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Bootstrap Astro 5 project with Tailwind v4 design token system
-- [ ] 01-02-PLAN.md — Layout system, page stubs with SEO, Nav, Footer, sitemap, robots.txt
+- [ ] 01-01-PLAN.md — Bootstrap Vite + React project with Tailwind v4 design token system and test infrastructure
+- [ ] 01-02-PLAN.md — Layout system (Nav, Footer, RootLayout), page stubs with SEO metadata, router, sitemap, robots.txt
 
 **Pitfall prevention:**
 - Dark theme contrast (Pitfall 1): Define all color tokens as CSS custom properties in the Tailwind v4 config with contrast ratios recorded alongside each pair before building any component. Use near-black (`#111111`) not pure black to avoid halation.
-- SEO fundamentals (Pitfall 5): Wire up Astro's `<head>` metadata system and sitemap generation in this phase. Retrofitting SEO after content is built has HIGH recovery cost — months of lost organic traction.
+- SEO fundamentals: Wire up React 19 native `<title>`/`<meta>` metadata hoisting and vite-plugin-sitemap generation in this phase. Retrofitting SEO after content is built has HIGH recovery cost — months of lost organic traction.
 - Inline style anti-pattern: Never write color values inline — all colors flow from CSS custom properties. Rebrand cost is one file, not a global find/replace.
 
 ---
@@ -103,14 +103,14 @@ Plans:
 - [ ] A screen reader user hears a meaningful label when focused on the slider (e.g., "Drag to compare before and after website versions") and can control it with arrow keys
 - [ ] Every portfolio item shows client name, a brief description of what changed, and the transformation outcome
 - [ ] The Work page is reachable from the global nav and composes all portfolio items in a coherent layout
-- [ ] Before/after images load optimized (use Astro `<Image />` component — no raw `<img>` tags serving full-resolution screenshots)
+- [ ] Before/after images load optimized — no raw `<img>` tags serving full-resolution screenshots
 
 **Dependencies:** Phase 1 (layout, image optimization), Phase 2 (data file structure)
 
 **Pitfall prevention:**
 - Slider accessibility (Pitfall 3): Implement slider control using a native `<input type="range">` under the `react-compare-slider` handle. Ensure 44x44px touch target on the drag handle. Set `touch-action: pan-y` on container, `touch-action: none` on handle to prevent scroll/drag conflicts on mobile.
 - Client permission: Obtain written permission from each client before displaying their site. Document permission in a comment in the content data file. Use placeholder screenshots for any client not yet confirmed.
-- Research flag: Verify react-compare-slider accepts Astro's `<Image />` component as image source (not just raw URL strings). If not, build a thin wrapper component that renders the Astro-optimized image and passes the resulting element to the slider.
+- Research flag: Verify react-compare-slider accepts standard `<img>` elements as image source.
 
 ---
 
@@ -127,14 +127,14 @@ Plans:
 - ANIM-01: Scroll-triggered entrance animations on section reveals
 - ANIM-02: All animations respect `prefers-reduced-motion` media query
 - ANIM-03: Animations use only `transform` and `opacity` (compositor-only properties)
-- FOUND-05: Page load scores ≥90 on Lighthouse mobile performance
+- FOUND-05: Page load scores >=90 on Lighthouse mobile performance
 
 **Success criteria:**
 - [ ] Submitting the contact form with real data results in an email arriving in Omer's inbox within 2 minutes (test with a real production submission before launch — not just local dev)
 - [ ] Submitting the form with the honeypot field filled silently fails with no error shown to the user (spam bot test)
 - [ ] The contact page offers both the inquiry form and the embedded booking calendar — two clear paths to getting started
 - [ ] Enabling "Reduce Motion" in OS accessibility settings causes all scroll animations to be suppressed
-- [ ] Every page scores ≥90 on Lighthouse mobile performance with CPU throttled at 4x slowdown in Chrome DevTools (not just desktop score)
+- [ ] Every page scores >=90 on Lighthouse mobile performance with CPU throttled at 4x slowdown in Chrome DevTools (not just desktop score)
 - [ ] Scroll animations on section reveals move only `transform` and `opacity` — verified by checking DevTools compositor layers
 
 **Dependencies:** Phase 1 (layout, design system), Phases 2 and 3 (stable content to animate)
@@ -142,7 +142,7 @@ Plans:
 **Pitfall prevention:**
 - Form spam and delivery failure (Pitfall 4): Honeypot field hidden via CSS opacity (not `display:none` — bots detect that). Layer Cloudflare Turnstile as invisible second defense. Test form end-to-end in production — this is the single most commonly missed pre-launch item.
 - Animation performance on mobile (Pitfall 2): Only animate `transform` and `opacity`. Limit simultaneous animated elements to 10 maximum. Hero LCP image must have `loading="eager"` and `fetchpriority="high"` — never lazy-load the LCP element. Test at CPU 4x throttle, not just native speed.
-- Calendly embed in Astro: Third-party script embeds require `<script is:inline>` or a client island wrapper. Confirm the correct pattern during planning — do not assume a `<script>` tag will work in an Astro component's frontmatter.
+- Calendly embed in React SPA: Third-party script embeds may need a React wrapper component with useEffect for script injection. Test the embed pattern during planning.
 - Single email delivery point: Configure at minimum a backup notification (e.g., Formspree's email + a secondary notification email or webhook to Google Sheets). Never rely on a single delivery path.
 
 ---
@@ -199,4 +199,4 @@ Plans:
 ---
 
 *Roadmap created: 2026-03-04*
-*Stack: Astro 5 + Tailwind CSS v4 + React islands + Motion + Formspree + Netlify*
+*Stack: Vite 6 + React 19 + React Router 7 + Tailwind CSS v4 + Netlify*
