@@ -14,7 +14,7 @@ export interface PortfolioItem {
 export const portfolioItems: PortfolioItem[] = [
   {
     id: "appcard-parking",
-    clientName: "AppCard Parking",
+    clientName: "Smart Parking",
     role: "Parking Management Platform",
     description:
       "Built a premium marketing site for an advanced parking management system — glassmorphism design, animated sections, and mobile-first responsive layout.",
