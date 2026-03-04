@@ -26,13 +26,13 @@ export default function ContactPage() {
       </p>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-2">
-        <div>
-          <h2 className="mb-6 text-2xl font-semibold">Send a Message</h2>
+        <div className="glass rounded-2xl p-6 md:p-8">
+          <h2 className="mb-6 text-2xl font-semibold text-accent">Send a Message</h2>
           <ContactForm />
         </div>
 
-        <div>
-          <h2 className="mb-6 text-2xl font-semibold">Book a Call</h2>
+        <div className="glass rounded-2xl p-6 md:p-8">
+          <h2 className="mb-6 text-2xl font-semibold text-accent">Book a Call</h2>
           <CalendlyEmbed url="https://calendly.com/omer72/30min" />
         </div>
       </div>

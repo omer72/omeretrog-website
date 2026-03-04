@@ -21,20 +21,28 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-sm">
       <nav aria-label="Main navigation" className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
-        <Link to="/" className="text-lg font-bold text-text">
+        <Link to="/" className="text-lg font-bold gradient-text">
           Omer Etrog
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden gap-8 md:flex">
-          {navLinks.map(({ to, label, end }) => (
-            <li key={to}>
-              <NavLink to={to} end={end} className={linkClasses}>
-                {label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden items-center gap-8 md:flex">
+          <ul className="flex gap-8">
+            {navLinks.map(({ to, label, end }) => (
+              <li key={to}>
+                <NavLink to={to} end={end} className={linkClasses}>
+                  {label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+          <Link
+            to="/contact"
+            className="gradient-btn rounded-full px-4 py-1.5 text-sm font-semibold text-white"
+          >
+            Book a Call
+          </Link>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -76,6 +84,15 @@ export default function Nav() {
               </NavLink>
             </li>
           ))}
+          <li>
+            <Link
+              to="/contact"
+              className="mt-2 inline-block gradient-btn rounded-full px-4 py-1.5 text-sm font-semibold text-white"
+              onClick={() => setIsOpen(false)}
+            >
+              Book a Call
+            </Link>
+          </li>
         </ul>
       )}
     </header>

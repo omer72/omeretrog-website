@@ -27,7 +27,8 @@ export default function PortfolioItem({ item }: Props) {
   return (
     <ScrollReveal>
       <article aria-label={`Portfolio: ${item.clientName}`}>
-        <div className="aspect-video overflow-hidden rounded-lg">
+        {/* Glow border around slider */}
+        <div className="aspect-video overflow-hidden rounded-xl glow-accent">
           <ReactCompareSlider
             aria-label={`Drag to compare before and after website for ${item.clientName}`}
             keyboardIncrement="5%"
@@ -48,10 +49,16 @@ export default function PortfolioItem({ item }: Props) {
             }
           />
         </div>
-        <h2 className="mt-4 text-xl font-semibold">{item.clientName}</h2>
-        <p className="text-text-muted text-sm">{item.role}</p>
-        <p className="text-text-muted mt-2">{item.description}</p>
-        <p className="font-medium text-accent mt-1">{item.result}</p>
+
+        {/* Glass metadata card */}
+        <div className="glass mt-4 rounded-xl p-4">
+          <h2 className="text-xl font-semibold">{item.clientName}</h2>
+          <p className="text-text-muted text-sm">{item.role}</p>
+          <p className="text-text-muted mt-2">{item.description}</p>
+          <p className="mt-2 inline-block rounded-full gradient-btn px-3 py-1 text-sm font-semibold text-white">
+            {item.result}
+          </p>
+        </div>
       </article>
     </ScrollReveal>
   );

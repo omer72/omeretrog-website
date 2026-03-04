@@ -13,6 +13,42 @@
 
   --color-accent:       oklch(0.72 0.19 255);
   --color-accent-hover: oklch(0.80 0.19 255);
+  --color-accent-2:     oklch(0.65 0.25 300);
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* --- Premium utility classes --- */
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(99, 140, 255, 0.25), 0 0 60px rgba(99, 140, 255, 0.1);
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  box-shadow: 0 0 24px rgba(99, 140, 255, 0.4), 0 0 60px rgba(99, 140, 255, 0.15);
+  transform: scale(1.03);
+}
+
+.gradient-border-top {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, var(--color-accent), var(--color-accent-2), transparent) 1;
 }
