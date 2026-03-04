@@ -1,0 +1,44 @@
+# Requirements: Omer Etrog — Website
+
+**Defined:** 2026-03-04
+**Core Value:** Visitors immediately understand the service (old site → modern site, under an hour) and have a clear path to get started
+
+## v1.1 Requirements
+
+Requirements for portfolio screenshots milestone. Each maps to roadmap phases.
+
+### Portfolio
+
+- [ ] **PORT-01**: Liat Leshem portfolio item shows real before/after comparison slider with screenshots
+- [ ] **PORT-02**: Bialystok Association portfolio item shows real before/after comparison slider with screenshots
+- [ ] **PORT-03**: All portfolio images are optimized WebP format at appropriate dimensions for the 16:9 aspect-video container
+
+## Future Requirements
+
+None currently deferred.
+
+## Out of Scope
+
+| Feature | Reason |
+|---------|--------|
+| Additional portfolio clients | Only confirmed clients (Liat Leshem, Bialystok) in this milestone |
+| Production deployment config | Separate concern — env vars, Lighthouse audit tracked as todos |
+
+## Traceability
+
+Which phases cover which requirements. Updated during roadmap creation.
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| PORT-01 | — | Pending |
+| PORT-02 | — | Pending |
+| PORT-03 | — | Pending |
+
+**Coverage:**
+- v1.1 requirements: 3 total
+- Mapped to phases: 0
+- Unmapped: 3 ⚠️
+
+---
+*Requirements defined: 2026-03-04*
+*Last updated: 2026-03-04 after initial definition*
