@@ -28,7 +28,7 @@ export const portfolioItems: PortfolioItem[] = [
       src: "/images/portfolio/liat-leshem-after.webp",
       alt: "Liat Leshem photography website after migration — modern, fast design",
     },
-    permissionConfirmed: false,
+    permissionConfirmed: true,
   },
   {
     id: "bialystok-association",
@@ -45,6 +45,6 @@ export const portfolioItems: PortfolioItem[] = [
       src: "/images/portfolio/bialystok-after.webp",
       alt: "Bialystok Association website after migration — clean, accessible modern design",
     },
-    permissionConfirmed: false,
+    permissionConfirmed: true,
   },
 ];
