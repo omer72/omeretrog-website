@@ -7,8 +7,8 @@
 
 ### Foundation
 
-- [ ] **FOUND-01**: Site uses dark premium theme with WCAG 4.5:1 contrast ratios on all text
-- [ ] **FOUND-02**: Site is fully responsive across mobile, tablet, and desktop
+- [x] **FOUND-01**: Site uses dark premium theme with WCAG 4.5:1 contrast ratios on all text
+- [x] **FOUND-02**: Site is fully responsive across mobile, tablet, and desktop
 - [ ] **FOUND-03**: Global navigation with links to all pages (Home, Work, About, Contact)
 - [ ] **FOUND-04**: Consistent footer with contact info and social links
 - [ ] **FOUND-05**: Page load scores ≥90 on Lighthouse mobile performance
@@ -93,8 +93,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Pending |
 | FOUND-04 | Phase 1 | Pending |
 | FOUND-05 | Phase 5 | Pending |
