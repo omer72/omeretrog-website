@@ -1,5 +1,3 @@
-// TODO: set permissionConfirmed to true only after obtaining written client permission
-
 export interface PortfolioItem {
   id: string;
   clientName: string;
