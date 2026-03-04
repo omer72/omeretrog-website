@@ -81,6 +81,13 @@ Plans:
 
 **Dependencies:** Phase 1 (layout, design tokens, nav/footer, metadata system)
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Content data files, TypeScript interfaces, JsonLd component, and static OG tags
+- [ ] 02-02-PLAN.md — HomePage section components (Hero, HowItWorks, Testimonials) + JSON-LD wiring + tests
+- [ ] 02-03-PLAN.md — About page content, photo/branding element, and tests
+
 **Pitfall prevention:**
 - Trust signals too late (Pitfall 6): The hero section must contain a before/after preview teaser OR a testimonial snippet — not just a headline and CTA. Sequence: hero claim → immediate evidence → CTA.
 - Multiple competing CTAs: One primary CTA per viewport section. The booking CTA in the hero links to the Contact page; all other CTAs are visually subordinate.
@@ -152,7 +159,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Design System | 2/2 | Complete | 2026-03-04 |
-| 2. Core Pages & Content | 0/? | Not started | - |
+| 2. Core Pages & Content | 0/3 | Not started | - |
 | 3. Portfolio Showcase | 0/? | Not started | - |
 | 4. Lead Generation, Polish & Launch | 0/? | Not started | - |
 
