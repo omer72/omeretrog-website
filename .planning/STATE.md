@@ -24,6 +24,8 @@
 - 2026-03-04: Used Tailwind v4 @theme directive for design tokens (not legacy tailwind.config.js)
 - 2026-03-04: Near-black #111111 background instead of pure black to reduce halation
 - 2026-03-04: All color token contrast ratios pre-verified and documented inline
+- 2026-03-04: Stack switched from Astro to Vite + React SPA (per earlier refactor decision)
+- 2026-03-04: Added vitest/config triple-slash reference to resolve TS error with test config in vite.config.ts
 
 ## Pending Todos
 
@@ -40,5 +42,5 @@
 ## Session Continuity
 
 Last session: 2026-03-04
-Stopped at: Completed 01-01-PLAN.md
-Resume file: .planning/phases/01-foundation-design-system/01-01-SUMMARY.md
+Stopped at: Executed 01-01-PLAN.md (scaffold + tests), ready for 01-02-PLAN.md
+Resume file: .planning/phases/01-foundation-design-system/01-02-PLAN.md

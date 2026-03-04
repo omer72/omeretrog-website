@@ -45,7 +45,7 @@
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Bootstrap Vite + React project with Tailwind v4 design token system and test infrastructure
+- [x] 01-01-PLAN.md — Bootstrap Vite + React project with Tailwind v4 design token system and test infrastructure
 - [ ] 01-02-PLAN.md — Layout system (Nav, Footer, RootLayout), page stubs with SEO metadata, router, sitemap, robots.txt
 
 **Pitfall prevention:**
@@ -151,7 +151,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Design System | 0/2 | Planning complete | - |
+| 1. Foundation & Design System | 1/2 | In progress | - |
 | 2. Core Pages & Content | 0/? | Not started | - |
 | 3. Portfolio Showcase | 0/? | Not started | - |
 | 4. Lead Generation, Polish & Launch | 0/? | Not started | - |
@@ -162,13 +162,13 @@ Plans:
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | 1 | Pending |
+| FOUND-01 | 1 | Complete |
 | FOUND-02 | 1 | Pending |
 | FOUND-03 | 1 | Pending |
 | FOUND-04 | 1 | Pending |
 | FOUND-05 | 4 | Pending |
 | SEO-01 | 1 | Pending |
-| SEO-04 | 1 | Pending |
+| SEO-04 | 1 | Complete |
 | SEO-05 | 1 | Pending |
 | HERO-01 | 2 | Pending |
 | HERO-02 | 2 | Pending |
