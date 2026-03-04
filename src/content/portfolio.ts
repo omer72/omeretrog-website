@@ -4,12 +4,28 @@ export interface PortfolioItem {
   role: string;
   description: string;
   result: string;
-  beforeImage: { src: string; alt: string };
-  afterImage: { src: string; alt: string };
+  beforeImage?: { src: string; alt: string };
+  afterImage?: { src: string; alt: string };
+  image?: { src: string; alt: string };
+  liveUrl?: string;
   permissionConfirmed: boolean;
 }
 
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: "appcard-parking",
+    clientName: "AppCard Parking",
+    role: "Parking Management Platform",
+    description:
+      "Built a premium marketing site for an advanced parking management system — glassmorphism design, animated sections, and mobile-first responsive layout.",
+    result: "98 PageSpeed score, fully responsive premium design",
+    image: {
+      src: "/images/portfolio/appcard-parking.webp",
+      alt: "AppCard Parking — premium marketing site with glassmorphism design",
+    },
+    liveUrl: "https://chaniya-appcard.netlify.app/",
+    permissionConfirmed: true,
+  },
   {
     id: "liat-leshem",
     clientName: "Liat Leshem",
