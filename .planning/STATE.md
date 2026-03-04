@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-02-PLAN.md (HomePage sections + JSON-LD)
-last_updated: "2026-03-04T10:03:02.053Z"
+stopped_at: Completed 03-01-PLAN.md (PortfolioItem component + slider)
+last_updated: "2026-03-04T12:21:00.000Z"
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 7
+  completed_plans: 7
 ---
 
 # Project State
@@ -21,13 +21,13 @@ progress:
 
 ## Current Position
 
-- Phase: 2 of 4
-- Current Plan: 3 of 3 (in Phase 2)
-- Status: Phase 2 plan 3 complete
+- Phase: 3 of 4
+- Current Plan: 1 of 2 (in Phase 3)
+- Status: Phase 3 plan 1 complete
 
 ## Progress
 
-[████████░░] 80%
+[█████████░] 86%
 
 ## Recent Decisions
 
@@ -45,12 +45,15 @@ progress:
 - 2026-03-04: Skip-to-content link in RootLayout for accessibility
 - 2026-03-04: Thin composer pattern: HomePage is 25 lines, imports all content from data files
 - 2026-03-04: Section components receive typed props for testability rather than importing data directly
+- 2026-03-04: react-compare-slider renders button[role=slider] with its own built-in aria-label; custom label goes on outer div container
+- 2026-03-04: Both portfolio items start with permissionConfirmed: false — placeholder card renders until written permission obtained
+- 2026-03-04: ResizeObserver polyfill added to tests/setup.ts for react-compare-slider jsdom compatibility
 
 ## Pending Todos
 
 - Obtain written permission from liatleshem.netlify.app client before displaying their site in portfolio
 - Obtain written permission from bialystoksite.netlify.app client before displaying their site in portfolio
-- Confirm react-compare-slider accepts Astro `<Image />` component as image source (Phase 3 research flag)
+- ~~Confirm react-compare-slider accepts Astro `<Image />` component as image source (Phase 3 research flag)~~ (RESOLVED: using Vite+React SPA, ReactCompareSliderImage used directly)
 - Confirm Calendly/Cal.com embed pattern for Astro static pages (Phase 4 research flag)
 - ~~Write keyword-targeted SEO titles and meta descriptions per page before Phase 1 planning~~ (DONE in 01-02)
 
@@ -60,6 +63,6 @@ progress:
 
 ## Session Continuity
 
-Last session: 2026-03-04T10:00:24.391Z
-Stopped at: Completed 02-02-PLAN.md (HomePage sections + JSON-LD)
+Last session: 2026-03-04T12:21:00.000Z
+Stopped at: Completed 03-01-PLAN.md (PortfolioItem component + slider)
 Resume file: None

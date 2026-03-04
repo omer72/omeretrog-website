@@ -22,9 +22,9 @@
 
 ### Portfolio
 
-- [ ] **PORT-01**: Interactive before/after image comparison slider for each portfolio item
-- [ ] **PORT-02**: Before/after slider is keyboard-accessible and touch-friendly
-- [ ] **PORT-03**: Portfolio items display client name, description, and transformation result
+- [x] **PORT-01**: Interactive before/after image comparison slider for each portfolio item
+- [x] **PORT-02**: Before/after slider is keyboard-accessible and touch-friendly
+- [x] **PORT-03**: Portfolio items display client name, description, and transformation result
 - [ ] **PORT-04**: Dedicated Work/Portfolio page composing all showcase items
 
 ### Testimonials
@@ -102,9 +102,9 @@
 | HERO-02 | Phase 2 | Complete |
 | HERO-03 | Phase 2 | Complete |
 | HERO-04 | Phase 2 | Complete |
-| PORT-01 | Phase 3 | Pending |
-| PORT-02 | Phase 3 | Pending |
-| PORT-03 | Phase 3 | Pending |
+| PORT-01 | Phase 3 | Complete |
+| PORT-02 | Phase 3 | Complete |
+| PORT-03 | Phase 3 | Complete |
 | PORT-04 | Phase 3 | Pending |
 | TEST-01 | Phase 2 | Complete |
 | TEST-02 | Phase 2 | Complete |
