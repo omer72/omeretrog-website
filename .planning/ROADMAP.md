@@ -151,6 +151,13 @@ Plans:
 
 **Dependencies:** Phase 1 (layout, design system), Phases 2 and 3 (stable content to animate)
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Contact form with Formspree, honeypot, Turnstile spam protection, Calendly embed, and success/error states (LEAD-01, LEAD-03, LEAD-04, LEAD-05)
+- [ ] 04-02-PLAN.md — ScrollReveal component, MotionConfig reduced-motion support, scroll animations on all sections (ANIM-01, ANIM-02, ANIM-03)
+- [ ] 04-03-PLAN.md — React.lazy route splitting, LCP optimization, Lighthouse 90+ verification, end-to-end email delivery test (FOUND-05, LEAD-02)
+
 **Pitfall prevention:**
 - Form spam and delivery failure (Pitfall 4): Honeypot field hidden via CSS opacity (not `display:none` — bots detect that). Layer Cloudflare Turnstile as invisible second defense. Test form end-to-end in production — this is the single most commonly missed pre-launch item.
 - Animation performance on mobile (Pitfall 2): Only animate `transform` and `opacity`. Limit simultaneous animated elements to 10 maximum. Hero LCP image must have `loading="eager"` and `fetchpriority="high"` — never lazy-load the LCP element. Test at CPU 4x throttle, not just native speed.
@@ -166,7 +173,7 @@ Plans:
 | 1. Foundation & Design System | 2/2 | Complete | 2026-03-04 |
 | 2. Core Pages & Content | 0/3 | Not started | - |
 | 3. Portfolio Showcase | 0/2 | In progress | - |
-| 4. Lead Generation, Polish & Launch | 0/? | Not started | - |
+| 4. Lead Generation, Polish & Launch | 0/3 | Not started | - |
 
 ---
 
