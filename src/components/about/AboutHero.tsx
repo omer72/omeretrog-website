@@ -6,9 +6,8 @@ export default function AboutHero() {
       <div className="grid items-center gap-12 md:grid-cols-2">
         {/* Photo / placeholder */}
         <div>
-          {/* TODO: Replace src with "/omer.jpg" when real photo is available */}
           <img
-            src="/omer-placeholder.svg"
+            src="/omer-profile.png"
             alt="Omer Etrog, web migration specialist"
             className="mx-auto w-full max-w-sm rounded-2xl"
           />
