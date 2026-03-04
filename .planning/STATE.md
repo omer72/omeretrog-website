@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-03-PLAN.md
-last_updated: "2026-03-04T09:59:36.148Z"
+stopped_at: Completed 02-02-PLAN.md (HomePage sections + JSON-LD)
+last_updated: "2026-03-04T10:00:24.394Z"
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # Project State
@@ -43,6 +43,8 @@ progress:
 - 2026-03-04: Used React 19 native title/meta hoisting instead of react-helmet for per-page SEO
 - 2026-03-04: NavLink end prop on Home route to prevent false active state
 - 2026-03-04: Skip-to-content link in RootLayout for accessibility
+- 2026-03-04: Thin composer pattern: HomePage is 25 lines, imports all content from data files
+- 2026-03-04: Section components receive typed props for testability rather than importing data directly
 
 ## Pending Todos
 
@@ -58,6 +60,6 @@ progress:
 
 ## Session Continuity
 
-Last session: 2026-03-04T09:59:36.144Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-03-04T10:00:24.391Z
+Stopped at: Completed 02-02-PLAN.md (HomePage sections + JSON-LD)
 Resume file: None

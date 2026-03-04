@@ -15,10 +15,10 @@
 
 ### Hero & Home
 
-- [ ] **HERO-01**: Hero section with bold value proposition ("old site → modern site, under an hour")
-- [ ] **HERO-02**: Primary CTA button above the fold linking to contact/booking
-- [ ] **HERO-03**: Social proof teaser visible in or immediately below hero (testimonial snippet or before/after preview)
-- [ ] **HERO-04**: "How It Works" section explaining the 3-step migration process
+- [x] **HERO-01**: Hero section with bold value proposition ("old site → modern site, under an hour")
+- [x] **HERO-02**: Primary CTA button above the fold linking to contact/booking
+- [x] **HERO-03**: Social proof teaser visible in or immediately below hero (testimonial snippet or before/after preview)
+- [x] **HERO-04**: "How It Works" section explaining the 3-step migration process
 
 ### Portfolio
 
@@ -29,9 +29,9 @@
 
 ### Testimonials
 
-- [ ] **TEST-01**: Testimonials section with at least 2-3 client quotes
-- [ ] **TEST-02**: Each testimonial shows client name and specific result
-- [ ] **TEST-03**: Testimonials visible on home page (not buried in navigation)
+- [x] **TEST-01**: Testimonials section with at least 2-3 client quotes
+- [x] **TEST-02**: Each testimonial shows client name and specific result
+- [x] **TEST-03**: Testimonials visible on home page (not buried in navigation)
 
 ### Contact & Lead Generation
 
@@ -98,17 +98,17 @@
 | FOUND-03 | Phase 1 | Pending |
 | FOUND-04 | Phase 1 | Pending |
 | FOUND-05 | Phase 5 | Pending |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| HERO-03 | Phase 2 | Complete |
+| HERO-04 | Phase 2 | Complete |
 | PORT-01 | Phase 3 | Pending |
 | PORT-02 | Phase 3 | Pending |
 | PORT-03 | Phase 3 | Pending |
 | PORT-04 | Phase 3 | Pending |
-| TEST-01 | Phase 2 | Pending |
-| TEST-02 | Phase 2 | Pending |
-| TEST-03 | Phase 2 | Pending |
+| TEST-01 | Phase 2 | Complete |
+| TEST-02 | Phase 2 | Complete |
+| TEST-03 | Phase 2 | Complete |
 | LEAD-01 | Phase 4 | Pending |
 | LEAD-02 | Phase 4 | Pending |
 | LEAD-03 | Phase 4 | Pending |
