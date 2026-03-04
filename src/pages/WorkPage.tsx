@@ -1,3 +1,6 @@
+import { portfolioItems } from "../content/portfolio";
+import PortfolioItem from "../components/work/PortfolioItem";
+
 export default function WorkPage() {
   return (
     <section aria-labelledby="work-heading" className="mx-auto max-w-4xl px-4 py-16 md:px-8">
@@ -15,6 +18,12 @@ export default function WorkPage() {
         Real website transformations — see how outdated Wix sites become modern,
         high-performance websites with all content preserved.
       </p>
+
+      <div className="mt-12 grid gap-16">
+        {portfolioItems.map((item) => (
+          <PortfolioItem key={item.id} item={item} />
+        ))}
+      </div>
     </section>
   );
 }
