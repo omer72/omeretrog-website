@@ -44,8 +44,8 @@
 ### SEO
 
 - [x] **SEO-01**: Unique, keyword-targeted title and meta description on every page
-- [ ] **SEO-02**: Open Graph tags and OG images for social sharing
-- [ ] **SEO-03**: JSON-LD structured data (Service schema) on homepage
+- [x] **SEO-02**: Open Graph tags and OG images for social sharing
+- [x] **SEO-03**: JSON-LD structured data (Service schema) on homepage
 - [x] **SEO-04**: XML sitemap and robots.txt generated automatically
 - [x] **SEO-05**: Semantic HTML throughout (proper heading hierarchy, landmarks)
 
@@ -115,8 +115,8 @@
 | LEAD-04 | Phase 4 | Pending |
 | LEAD-05 | Phase 4 | Pending |
 | SEO-01 | Phase 1 | Pending |
-| SEO-02 | Phase 2 | Pending |
-| SEO-03 | Phase 2 | Pending |
+| SEO-02 | Phase 2 | Complete |
+| SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 1 | Complete |
 | SEO-05 | Phase 1 | Pending |
 | ABOUT-01 | Phase 2 | Pending |
