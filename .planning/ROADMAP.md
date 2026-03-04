@@ -13,7 +13,7 @@
 |-------|------|-------------|--------|
 | 1 | Foundation & Design System | FOUND-01, FOUND-02, FOUND-03, FOUND-04, SEO-01, SEO-04, SEO-05 | Complete |
 | 2 | 3/3 | Complete   | 2026-03-04 |
-| 3 | Portfolio Showcase | PORT-01, PORT-02, PORT-03, PORT-04 | Not started |
+| 3 | Portfolio Showcase | PORT-01, PORT-02, PORT-03, PORT-04 | In progress |
 | 4 | Lead Generation, Polish & Launch | LEAD-01, LEAD-02, LEAD-03, LEAD-04, LEAD-05, ANIM-01, ANIM-02, ANIM-03, FOUND-05 | Not started |
 
 ---
@@ -119,6 +119,11 @@ Plans:
 - Client permission: Obtain written permission from each client before displaying their site. Document permission in a comment in the content data file. Use placeholder screenshots for any client not yet confirmed.
 - Research flag: Verify react-compare-slider accepts standard `<img>` elements as image source.
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Content data file, PortfolioItem component with slider, and unit tests (PORT-01, PORT-02, PORT-03)
+- [ ] 03-02-PLAN.md — WorkPage composition with portfolio items and visual verification (PORT-04)
 ---
 
 ### Phase 4: Lead Generation, Polish & Launch
@@ -160,7 +165,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation & Design System | 2/2 | Complete | 2026-03-04 |
 | 2. Core Pages & Content | 0/3 | Not started | - |
-| 3. Portfolio Showcase | 0/? | Not started | - |
+| 3. Portfolio Showcase | 0/2 | In progress | - |
 | 4. Lead Generation, Polish & Launch | 0/? | Not started | - |
 
 ---
