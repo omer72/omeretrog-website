@@ -105,7 +105,7 @@ export default function ContactForm() {
         options={{ size: "invisible" }}
       />
 
-      {state.errors && state.errors.length > 0 && (
+      {state.errors && Object.keys(state.errors).length > 0 && (
         <p role="alert" className="text-sm text-red-400">
           Something went wrong. Please try again.
         </p>
