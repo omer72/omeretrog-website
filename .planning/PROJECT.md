@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A premium, dark-themed multi-page website for Omer Etrog's web migration service. The site showcases the core offering — converting old static Wix sites into modern, sleek websites with all content migrated in under an hour. It targets small businesses and individuals with outdated sites who want a fast, high-quality upgrade.
+A premium, dark-themed multi-page website for Omer Etrog's web migration service — converting old static Wix sites into modern, sleek websites with all content migrated in under an hour. Built as a Vite + React 19 SPA with Tailwind CSS v4, deployed on Netlify.
 
 ## Core Value
 
@@ -12,32 +12,39 @@ Visitors immediately understand the service (old site → modern site, under an 
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Multi-page site with dark, premium aesthetic — v1.0
+- ✓ Hero/landing section with bold value proposition and CTA — v1.0
+- ✓ Before/after showcase of site transformations — v1.0
+- ✓ Testimonials section with client social proof — v1.0
+- ✓ Contact/booking page for lead generation — v1.0
+- ✓ Fast, modern, SEO-friendly implementation — v1.0
+- ✓ Responsive design (mobile + desktop) — v1.0
+- ✓ Scroll animations with reduced-motion respect — v1.0
+- ✓ Spam protection (honeypot + Turnstile) — v1.0
+- ✓ React.lazy code splitting for performance — v1.0
 
 ### Active
 
-- [ ] Multi-page site with dark, premium aesthetic
-- [ ] Hero/landing section with bold value proposition and CTA
-- [ ] Before/after showcase of site transformations
-- [ ] Testimonials section with client social proof
-- [ ] Contact/booking page for lead generation
-- [ ] Fast, modern, SEO-friendly implementation
-- [ ] Responsive design (mobile + desktop)
+(None — define with next milestone)
 
 ### Out of Scope
 
 - Blog/content marketing — not needed for v1, can add later
 - E-commerce/payments — service is custom-quoted, not self-serve
 - Client portal/dashboard — out of scope for a marketing site
-- CMS/admin panel — content will be managed in code for v1
+- CMS/admin panel — content managed in code for v1
+- Real-time chat widget — form + calendar sufficient for lead gen
 
 ## Context
 
-- Omer runs a service converting old static Wix sites to modern websites
-- Key differentiator: speed — full migration in under an hour
-- Target audience: small businesses and individuals with outdated websites
-- The site itself should demonstrate the quality Omer delivers (dark, premium, sleek)
-- Multi-page structure: Home, Portfolio/Work, About, Contact (at minimum)
+Shipped v1.0 with 907 LOC TypeScript/TSX/CSS, 78 tests.
+Tech stack: Vite 6, React 19, React Router 7, Tailwind CSS v4, Motion, Formspree, Netlify.
+
+**Current state:** All 4 pages functional (Home, Work, About, Contact). Portfolio items show placeholder cards pending written client permission. Contact form requires Formspree + Turnstile env vars on Netlify for production.
+
+**Known issues:**
+- Portfolio clients (Liat Leshem, Bialystok Association) need written permission before screenshots can be displayed
+- LEAD-02 (email delivery) and FOUND-05 (Lighthouse 90+) approved but need post-deploy production verification
 
 ## Constraints
 
@@ -49,11 +56,17 @@ Visitors immediately understand the service (old site → modern site, under an 
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Multi-page over single-page | Better SEO, room to grow, professional feel | Confirmed |
-| Dark & premium theme | Communicates high-end service quality | Confirmed |
-| Vite + React + React Router | User preference — not Astro. SPA with client-side routing | Confirmed |
-| Tailwind CSS v4 | Styling system with dark theme tokens | Confirmed |
-| Netlify hosting | Free tier permits commercial use | Confirmed |
+| Multi-page over single-page | Better SEO, room to grow, professional feel | ✓ Good |
+| Dark & premium theme | Communicates high-end service quality | ✓ Good |
+| Vite + React + React Router | User preference — SPA with client-side routing | ✓ Good |
+| Tailwind CSS v4 @theme | Design tokens as CSS custom properties, not legacy config | ✓ Good |
+| Netlify hosting | Free tier permits commercial use | ✓ Good |
+| Near-black #111111 over pure black | Reduces halation, premium feel | ✓ Good |
+| React 19 native meta hoisting | No react-helmet dependency needed | ✓ Good |
+| Thin composer pattern | Pages are <30 lines, import from data files, testable | ✓ Good |
+| Facade pattern for Calendly | Saves ~200KB JS from blocking page load | ✓ Good |
+| MotionConfig at root | Single-point reduced-motion respect for all animations | ✓ Good |
+| React.lazy route splitting | Contact page heaviest JS isolated from initial bundle | ✓ Good |
 
 ---
-*Last updated: 2026-03-04 after stack change to Vite + React*
+*Last updated: 2026-03-04 after v1.0 milestone*
