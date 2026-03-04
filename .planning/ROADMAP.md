@@ -34,10 +34,10 @@
   2. Bialystok Association card shows a draggable before/after compare slider with real screenshots (not a placeholder)
   3. All portfolio images are served as WebP and fill the 16:9 aspect-video container without distortion
   4. Portfolio sliders remain keyboard and touch accessible (Tab/arrow keys and drag both work)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md — Process screenshots to WebP and activate compare sliders
 
 ## Progress
 
@@ -47,7 +47,7 @@ Plans:
 | 2. Core Pages & Content | v1.0 | 3/3 | Complete | 2026-03-04 |
 | 3. Portfolio Showcase | v1.0 | 2/2 | Complete | 2026-03-04 |
 | 4. Lead Generation, Polish & Launch | v1.0 | 3/3 | Complete | 2026-03-04 |
-| 5. Portfolio Screenshots | v1.1 | 0/? | Not started | - |
+| 5. Portfolio Screenshots | v1.1 | 0/1 | Not started | - |
 
 ---
 
