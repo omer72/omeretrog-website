@@ -13,18 +13,18 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "liat-leshem",
     clientName: "Liat Leshem",
-    role: "Photographer",
+    role: "Voice Artist | Actress | Presenter",
     description:
-      "Full Wix site migration preserving gallery, pricing, and contact pages.",
+      "Full Wix site migration preserving demo reels, bio, and contact pages.",
     result:
       "Launched in under 45 minutes with PageSpeed score jumping from 34 to 96.",
     beforeImage: {
       src: "/images/portfolio/liat-leshem-before.webp",
-      alt: "Liat Leshem photography website before migration — original Wix design",
+      alt: "Liat Leshem voice artist website before migration — original Wix design",
     },
     afterImage: {
       src: "/images/portfolio/liat-leshem-after.webp",
-      alt: "Liat Leshem photography website after migration — modern, fast design",
+      alt: "Liat Leshem voice artist website after migration — modern, fast design",
     },
     permissionConfirmed: true,
   },
