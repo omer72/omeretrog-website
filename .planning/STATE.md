@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 04-01-PLAN.md — Contact page with form and Calendly
-last_updated: "2026-03-04T12:04:21.094Z"
+stopped_at: Completed 04-02-PLAN.md — Scroll animations polish
+last_updated: "2026-03-04T12:06:00Z"
 progress:
   total_phases: 4
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 10
-  completed_plans: 8
+  completed_plans: 10
 ---
 
 # Project State
@@ -21,13 +21,13 @@ progress:
 
 ## Current Position
 
-- Phase: 4 of 4 (Phase 4 in progress)
-- Current Plan: 1 of 2 in Phase 4 — COMPLETE
-- Status: Phase 4 Plan 1 (Contact Page Lead Generation) complete; ready for Phase 4 Plan 2
+- Phase: 4 of 4 (Phase 4 complete)
+- Current Plan: 2 of 2 in Phase 4 — COMPLETE
+- Status: All phases complete — Phase 4 (Lead Generation + Polish) fully done
 
 ## Progress
 
-[████████░░] 80%
+[█████████░] 90%
 
 ## Recent Decisions
 
@@ -53,6 +53,8 @@ progress:
 - 2026-03-04: Facade pattern for Calendly embed — InlineWidget only loads on user click to protect Lighthouse mobile score
 - 2026-03-04: Formspree test ID and Turnstile test key as dev fallbacks — form renders without env vars during development
 - 2026-03-04: Turnstile must be inside <form> element so cf-turnstile-response token submits with form data
+- 2026-03-04: ScrollReveal uses only opacity and y transform (compositor-safe); Hero section excluded (above-fold LCP)
+- 2026-03-04: MotionConfig reducedMotion='user' wraps RootLayout globally; IntersectionObserver polyfill added to test setup
 
 ## Pending Todos
 
@@ -68,6 +70,6 @@ progress:
 
 ## Session Continuity
 
-Last session: 2026-03-04T12:04:21.091Z
-Stopped at: Completed 04-01-PLAN.md — Contact page with form and Calendly
+Last session: 2026-03-04T12:06:00Z
+Stopped at: Completed 04-02-PLAN.md — Scroll animations polish
 Resume file: None

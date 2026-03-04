@@ -56,9 +56,9 @@
 
 ### Animations
 
-- [ ] **ANIM-01**: Scroll-triggered entrance animations on section reveals
-- [ ] **ANIM-02**: All animations respect `prefers-reduced-motion` media query
-- [ ] **ANIM-03**: Animations use only `transform` and `opacity` (compositor-only properties)
+- [x] **ANIM-01**: Scroll-triggered entrance animations on section reveals
+- [x] **ANIM-02**: All animations respect `prefers-reduced-motion` media query
+- [x] **ANIM-03**: Animations use only `transform` and `opacity` (compositor-only properties)
 
 ## v2 Requirements
 
@@ -121,9 +121,9 @@
 | SEO-05 | Phase 1 | Pending |
 | ABOUT-01 | Phase 2 | Complete |
 | ABOUT-02 | Phase 2 | Complete |
-| ANIM-01 | Phase 5 | Pending |
-| ANIM-02 | Phase 5 | Pending |
-| ANIM-03 | Phase 5 | Pending |
+| ANIM-01 | Phase 5 | Complete |
+| ANIM-02 | Phase 5 | Complete |
+| ANIM-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 31 total
