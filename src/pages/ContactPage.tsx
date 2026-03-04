@@ -33,7 +33,7 @@ export default function ContactPage() {
 
         <div>
           <h2 className="mb-6 text-2xl font-semibold">Book a Call</h2>
-          <CalendlyEmbed url="https://calendly.com/omeretrog/30min" />
+          <CalendlyEmbed url="https://calendly.com/omer72/30min" />
         </div>
       </div>
     </section>
