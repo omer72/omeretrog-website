@@ -1,4 +1,5 @@
 import type { HowItWorksStep } from "../../content/how-it-works";
+import ScrollReveal from "../ui/ScrollReveal";
 
 interface HowItWorksSectionProps {
   steps: HowItWorksStep[];
@@ -15,6 +16,7 @@ export default function HowItWorksSection({ steps }: HowItWorksSectionProps) {
           How It Works
         </h2>
 
+        <ScrollReveal>
         <div className="grid gap-8 md:grid-cols-3">
           {steps.map((s) => (
             <div
@@ -27,6 +29,7 @@ export default function HowItWorksSection({ steps }: HowItWorksSectionProps) {
             </div>
           ))}
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

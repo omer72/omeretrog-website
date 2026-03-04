@@ -1,4 +1,5 @@
 import type { Testimonial } from "../../content/testimonials";
+import ScrollReveal from "../ui/ScrollReveal";
 
 interface TestimonialsSectionProps {
   testimonials: Testimonial[];
@@ -17,6 +18,7 @@ export default function TestimonialsSection({
           What Clients Say
         </h2>
 
+        <ScrollReveal>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
             <blockquote
@@ -38,6 +40,7 @@ export default function TestimonialsSection({
             </blockquote>
           ))}
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );
