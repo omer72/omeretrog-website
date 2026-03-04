@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "WebSearch",
+      "WebFetch(domain:astro.build)",
+      "WebFetch(domain:contentsnare.com)",
+      "WebFetch(domain:www.digitalsilk.com)",
+      "WebFetch(domain:www.liatleshem.com)",
+      "WebFetch(domain:liatleshem.netlify.app)",
+      "WebFetch(domain:www.bialystokvicinityexpatsisrael.org.il)",
+      "WebFetch(domain:bialystoksite.netlify.app)"
+    ]
+  }
+}

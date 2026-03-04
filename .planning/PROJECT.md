@@ -49,9 +49,11 @@ Visitors immediately understand the service (old site → modern site, under an 
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Multi-page over single-page | Better SEO, room to grow, professional feel | — Pending |
-| Dark & premium theme | Communicates high-end service quality | — Pending |
-| Tech stack TBD | Will be decided during research phase | — Pending |
+| Multi-page over single-page | Better SEO, room to grow, professional feel | Confirmed |
+| Dark & premium theme | Communicates high-end service quality | Confirmed |
+| Vite + React + React Router | User preference — not Astro. SPA with client-side routing | Confirmed |
+| Tailwind CSS v4 | Styling system with dark theme tokens | Confirmed |
+| Netlify hosting | Free tier permits commercial use | Confirmed |
 
 ---
-*Last updated: 2026-03-04 after initialization*
+*Last updated: 2026-03-04 after stack change to Vite + React*
