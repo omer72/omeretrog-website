@@ -42,6 +42,12 @@
 
 **Dependencies:** None (first phase)
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Bootstrap Astro 5 project with Tailwind v4 design token system
+- [ ] 01-02-PLAN.md — Layout system, page stubs with SEO, Nav, Footer, sitemap, robots.txt
+
 **Pitfall prevention:**
 - Dark theme contrast (Pitfall 1): Define all color tokens as CSS custom properties in the Tailwind v4 config with contrast ratios recorded alongside each pair before building any component. Use near-black (`#111111`) not pure black to avoid halation.
 - SEO fundamentals (Pitfall 5): Wire up Astro's `<head>` metadata system and sitemap generation in this phase. Retrofitting SEO after content is built has HIGH recovery cost — months of lost organic traction.
@@ -145,7 +151,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Design System | 0/? | Not started | - |
+| 1. Foundation & Design System | 0/2 | Planning complete | - |
 | 2. Core Pages & Content | 0/? | Not started | - |
 | 3. Portfolio Showcase | 0/? | Not started | - |
 | 4. Lead Generation, Polish & Launch | 0/? | Not started | - |
