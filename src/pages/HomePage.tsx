@@ -1,6 +1,14 @@
+import HeroSection from "../components/home/HeroSection";
+import HowItWorksSection from "../components/home/HowItWorksSection";
+import TestimonialsSection from "../components/home/TestimonialsSection";
+import JsonLd from "../components/JsonLd";
+import { testimonials } from "../content/testimonials";
+import { steps } from "../content/how-it-works";
+import { serviceSchema } from "../content/schema";
+
 export default function HomePage() {
   return (
-    <section aria-labelledby="home-heading" className="mx-auto max-w-4xl px-4 py-16 md:px-8">
+    <>
       <title>Omer Etrog | Modern Web Migration in Under an Hour</title>
       <meta
         name="description"
@@ -8,13 +16,10 @@ export default function HomePage() {
       />
       <link rel="canonical" href="https://omeretrog.com/" />
 
-      <h1 id="home-heading" className="text-4xl font-bold md:text-5xl">
-        Your old site, rebuilt modern — in under an hour
-      </h1>
-      <p className="mt-6 text-lg text-text-muted">
-        Outdated Wix site holding you back? Get a blazing-fast, modern website
-        with all your content migrated — fully launched in under an hour.
-      </p>
-    </section>
+      <HeroSection testimonialTeaser={testimonials[0]} />
+      <HowItWorksSection steps={steps} />
+      <TestimonialsSection testimonials={testimonials} />
+      <JsonLd data={serviceSchema} />
+    </>
   );
 }
