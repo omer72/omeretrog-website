@@ -51,8 +51,8 @@
 
 ### About
 
-- [ ] **ABOUT-01**: About page with Omer's background and expertise
-- [ ] **ABOUT-02**: Professional photo or personal branding element
+- [x] **ABOUT-01**: About page with Omer's background and expertise
+- [x] **ABOUT-02**: Professional photo or personal branding element
 
 ### Animations
 
@@ -119,8 +119,8 @@
 | SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 1 | Complete |
 | SEO-05 | Phase 1 | Pending |
-| ABOUT-01 | Phase 2 | Pending |
-| ABOUT-02 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Complete |
+| ABOUT-02 | Phase 2 | Complete |
 | ANIM-01 | Phase 5 | Pending |
 | ANIM-02 | Phase 5 | Pending |
 | ANIM-03 | Phase 5 | Pending |
