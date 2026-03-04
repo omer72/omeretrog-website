@@ -14,7 +14,7 @@
 | 1 | Foundation & Design System | FOUND-01, FOUND-02, FOUND-03, FOUND-04, SEO-01, SEO-04, SEO-05 | Complete |
 | 2 | 3/3 | Complete   | 2026-03-04 |
 | 3 | 2/2 | Complete   | 2026-03-04 |
-| 4 | Lead Generation, Polish & Launch | LEAD-01, LEAD-02, LEAD-03, LEAD-04, LEAD-05, ANIM-01, ANIM-02, ANIM-03, FOUND-05 | Not started |
+| 4 | 1/3 | In Progress|  |
 
 ---
 
@@ -151,7 +151,7 @@ Plans:
 
 **Dependencies:** Phase 1 (layout, design system), Phases 2 and 3 (stable content to animate)
 
-**Plans:** 3 plans
+**Plans:** 1/3 plans executed
 
 Plans:
 - [ ] 04-01-PLAN.md — Contact form with Formspree, honeypot, Turnstile spam protection, Calendly embed, and success/error states (LEAD-01, LEAD-03, LEAD-04, LEAD-05)

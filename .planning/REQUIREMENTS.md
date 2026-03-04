@@ -35,11 +35,11 @@
 
 ### Contact & Lead Generation
 
-- [ ] **LEAD-01**: Contact page with inquiry form (name, email, message, current site URL)
+- [x] **LEAD-01**: Contact page with inquiry form (name, email, message, current site URL)
 - [ ] **LEAD-02**: Form submissions delivered to Omer's email reliably (end-to-end verified)
-- [ ] **LEAD-03**: Spam protection on contact form (honeypot + invisible challenge)
-- [ ] **LEAD-04**: Embedded booking calendar (Calendly or Cal.com) on contact page
-- [ ] **LEAD-05**: Form shows success/error confirmation states
+- [x] **LEAD-03**: Spam protection on contact form (honeypot + invisible challenge)
+- [x] **LEAD-04**: Embedded booking calendar (Calendly or Cal.com) on contact page
+- [x] **LEAD-05**: Form shows success/error confirmation states
 
 ### SEO
 
@@ -109,11 +109,11 @@
 | TEST-01 | Phase 2 | Complete |
 | TEST-02 | Phase 2 | Complete |
 | TEST-03 | Phase 2 | Complete |
-| LEAD-01 | Phase 4 | Pending |
+| LEAD-01 | Phase 4 | Complete |
 | LEAD-02 | Phase 4 | Pending |
-| LEAD-03 | Phase 4 | Pending |
-| LEAD-04 | Phase 4 | Pending |
-| LEAD-05 | Phase 4 | Pending |
+| LEAD-03 | Phase 4 | Complete |
+| LEAD-04 | Phase 4 | Complete |
+| LEAD-05 | Phase 4 | Complete |
 | SEO-01 | Phase 1 | Pending |
 | SEO-02 | Phase 2 | Complete |
 | SEO-03 | Phase 2 | Complete |

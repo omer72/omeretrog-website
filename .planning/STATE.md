@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 03-02-PLAN.md — Phase 3 portfolio showcase done
-last_updated: "2026-03-04T10:32:59.305Z"
+stopped_at: Completed 04-01-PLAN.md — Contact page with form and Calendly
+last_updated: "2026-03-04T12:04:21.094Z"
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
+  total_plans: 10
+  completed_plans: 8
 ---
 
 # Project State
@@ -21,13 +21,13 @@ progress:
 
 ## Current Position
 
-- Phase: 3 of 4 (Phase 3 complete)
-- Current Plan: 2 of 2 in Phase 3 — COMPLETE
-- Status: Phase 3 (Portfolio Showcase) fully complete; ready to begin Phase 4 (Contact/CTA)
+- Phase: 4 of 4 (Phase 4 in progress)
+- Current Plan: 1 of 2 in Phase 4 — COMPLETE
+- Status: Phase 4 Plan 1 (Contact Page Lead Generation) complete; ready for Phase 4 Plan 2
 
 ## Progress
 
-[██████████] 100%
+[████████░░] 80%
 
 ## Recent Decisions
 
@@ -50,13 +50,16 @@ progress:
 - 2026-03-04: ResizeObserver polyfill added to tests/setup.ts for react-compare-slider jsdom compatibility
 - 2026-03-04: WorkPage kept as thin composer under 30 lines — maps portfolioItems over PortfolioItem, no business logic
 - 2026-03-04: Mock react-compare-slider at page-level tests (vi.mock) to isolate WorkPage composition from slider internals
+- 2026-03-04: Facade pattern for Calendly embed — InlineWidget only loads on user click to protect Lighthouse mobile score
+- 2026-03-04: Formspree test ID and Turnstile test key as dev fallbacks — form renders without env vars during development
+- 2026-03-04: Turnstile must be inside <form> element so cf-turnstile-response token submits with form data
 
 ## Pending Todos
 
 - Obtain written permission from liatleshem.netlify.app client before displaying their site in portfolio
 - Obtain written permission from bialystoksite.netlify.app client before displaying their site in portfolio
 - ~~Confirm react-compare-slider accepts Astro `<Image />` component as image source (Phase 3 research flag)~~ (RESOLVED: using Vite+React SPA, ReactCompareSliderImage used directly)
-- Confirm Calendly/Cal.com embed pattern for Astro static pages (Phase 4 research flag)
+- ~~Confirm Calendly/Cal.com embed pattern for Astro static pages (Phase 4 research flag)~~ (RESOLVED: react-calendly InlineWidget with facade pattern; React 19 compatible)
 - ~~Write keyword-targeted SEO titles and meta descriptions per page before Phase 1 planning~~ (DONE in 01-02)
 
 ## Blockers / Concerns
@@ -65,6 +68,6 @@ progress:
 
 ## Session Continuity
 
-Last session: 2026-03-04T10:29:04Z
-Stopped at: Completed 03-02-PLAN.md — Phase 3 portfolio showcase done
+Last session: 2026-03-04T12:04:21.091Z
+Stopped at: Completed 04-01-PLAN.md — Contact page with form and Calendly
 Resume file: None
