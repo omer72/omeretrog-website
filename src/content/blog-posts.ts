@@ -11,6 +11,37 @@ export interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "bialystok-wix-migration",
+    date: "2026-03-03",
+    tags: ["Claude Code", "AI", "Web Development", "React", "TypeScript", "Wix Migration", "Performance", "Accessibility"],
+    linkedInUrl:
+      "https://www.linkedin.com/posts/omer72_claudecode-ai-webdevelopment-share-7434605480012038144-1qOM",
+    title: {
+      en: "Migrating a Nonprofit's Legacy Wix Site with Claude Code",
+      he: "העברת אתר Wix ישן של עמותה בעזרת Claude Code",
+    },
+    body: {
+      en: `I just finished migrating a nonprofit's legacy Wix website to a modern tech stack using Claude Code. The organization preserves Bialystok's Jewish community heritage in Israel.
+
+The rebuilt site achieved impressive Lighthouse scores: Performance 99, Accessibility 100, Best Practices 96, SEO 100.
+
+The solution employed React 18 + TypeScript + Vite, an Express backend with JWT authentication, a JSON-based CMS (no database required), bilingual support (Hebrew RTL and English), an admin content management panel, and a Puppeteer-based scraping pipeline.
+
+I used Claude Code to scrape every page, blog post, and image while cleaning messy Wix-generated HTML, then rebuilt everything from scratch. Work that would typically require weeks was completed significantly faster.
+
+AI isn't replacing developers. It's giving us superpowers.`,
+      he: `סיימתי להעביר אתר Wix ישן של עמותה לסטאק טכנולוגי מודרני בעזרת Claude Code. הארגון שומר על מורשת הקהילה היהודית של ביאליסטוק בישראל.
+
+האתר המחודש השיג ציוני Lighthouse מרשימים: ביצועים 99, נגישות 100, Best Practices 96, SEO 100.
+
+הפתרון כולל React 18 + TypeScript + Vite, שרת Express עם אימות JWT, מערכת ניהול תוכן מבוססת JSON (ללא צורך במסד נתונים), תמיכה דו-לשונית (עברית RTL ואנגלית), פאנל ניהול תוכן, וצינור סקרייפינג מבוסס Puppeteer.
+
+השתמשתי ב-Claude Code כדי לסרוק כל דף, פוסט בלוג ותמונה תוך ניקוי HTML מבולגן שנוצר על ידי Wix, ואז בניתי הכל מחדש מאפס. עבודה שבדרך כלל דורשת שבועות הושלמה מהר משמעותית.
+
+AI לא מחליף מפתחים. הוא נותן לנו כוחות-על.`,
+    },
+  },
+  {
     id: "jwt-chrome-extension",
     date: "2026-03-01",
     tags: ["AI", "Developer Productivity", "Chrome Extension", "JWT", "OIDC"],
