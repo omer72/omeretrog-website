@@ -52,3 +52,9 @@
   border-top: 1px solid transparent;
   border-image: linear-gradient(90deg, transparent, var(--color-accent), var(--color-accent-2), transparent) 1;
 }
+
+/* --- RTL support --- */
+
+:root[dir="rtl"] {
+  --font-sans: "Heebo", system-ui, -apple-system, sans-serif;
+}

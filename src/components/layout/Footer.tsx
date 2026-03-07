@@ -1,21 +1,23 @@
 import { Link } from "react-router";
+import { useLocale } from "../../i18n/LocaleContext";
 
 export default function Footer() {
+  const { t } = useLocale();
   return (
     <footer>
       {/* Mini CTA band */}
       <div className="bg-surface-alt py-10 text-center">
         <p className="text-xl font-bold md:text-2xl">
-          Ready to upgrade your site?
+          {t("footer.ctaHeading")}
         </p>
         <p className="mt-2 text-text-muted">
-          Get a blazing-fast, modern website — fully launched in under an hour.
+          {t("footer.ctaSubtitle")}
         </p>
         <Link
           to="/contact"
           className="gradient-btn mt-5 inline-block rounded-lg px-6 py-3 font-semibold text-white"
         >
-          Get Started
+          {t("footer.cta")}
         </Link>
       </div>
 
@@ -23,7 +25,7 @@ export default function Footer() {
       <div className="gradient-border-top bg-surface">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 md:flex-row md:justify-between md:px-8">
           {/* Contact */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-start">
             <p className="text-sm text-text-muted">
               <a
                 href="mailto:omer72@gmail.com"
@@ -62,7 +64,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-text-muted">
-            &copy; 2026 Omer Etrog. All rights reserved.
+            {t("footer.copyright")}
           </p>
         </div>
       </div>

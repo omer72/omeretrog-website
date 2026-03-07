@@ -2,24 +2,29 @@ import HeroSection from "../components/home/HeroSection";
 import HowItWorksSection from "../components/home/HowItWorksSection";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import JsonLd from "../components/JsonLd";
-import { testimonials } from "../content/testimonials";
-import { steps } from "../content/how-it-works";
-import { serviceSchema } from "../content/schema";
+import { getTestimonials } from "../content/testimonials";
+import { getSteps } from "../content/how-it-works";
+import { getServiceSchema } from "../content/schema";
+import { useLocale } from "../i18n/LocaleContext";
 
 export default function HomePage() {
+  const { t, locale } = useLocale();
+  const testimonials = getTestimonials(locale);
+  const steps = getSteps(locale);
+
   return (
     <>
-      <title>Omer Etrog | Modern Web Migration in Under an Hour</title>
+      <title>{t("meta.home.title")}</title>
       <meta
         name="description"
-        content="Transform your outdated Wix site into a fast, modern website. Full content migration in under an hour. See real before & after results."
+        content={t("meta.home.description")}
       />
-      <link rel="canonical" href="https://omeretrog.com/" />
+      <link rel="canonical" href="https://omer72.github.io/omeretrog-website/" />
 
       <HeroSection testimonialTeaser={testimonials[0]} />
       <HowItWorksSection steps={steps} />
       <TestimonialsSection testimonials={testimonials} />
-      <JsonLd data={serviceSchema} />
+      <JsonLd data={getServiceSchema(locale)} />
     </>
   );
 }

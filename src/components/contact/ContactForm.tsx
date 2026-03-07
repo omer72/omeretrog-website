@@ -1,7 +1,9 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Turnstile } from "@marsidev/react-turnstile";
+import { useLocale } from "../../i18n/LocaleContext";
 
 export default function ContactForm() {
+  const { t } = useLocale();
   const [state, handleSubmit] = useForm(
     import.meta.env.VITE_FORMSPREE_FORM_ID || "test"
   );
@@ -12,7 +14,7 @@ export default function ContactForm() {
         role="status"
         className="rounded-lg bg-green-900/30 p-6 text-center text-green-300"
       >
-        Thanks! Omer will be in touch within 24 hours.
+        {t("contact.success")}
       </p>
     );
   }
@@ -31,7 +33,7 @@ export default function ContactForm() {
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="name" className="text-sm font-medium text-text-muted">
-          Name
+          {t("contact.nameLabel")}
         </label>
         <input
           id="name"
@@ -39,13 +41,13 @@ export default function ContactForm() {
           name="name"
           required
           className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-accent"
-          placeholder="Jane Smith"
+          placeholder={t("contact.namePlaceholder")}
         />
       </div>
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="email" className="text-sm font-medium text-text-muted">
-          Email
+          {t("contact.emailLabel")}
         </label>
         <input
           id="email"
@@ -53,9 +55,9 @@ export default function ContactForm() {
           name="email"
           required
           className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-accent"
-          placeholder="jane@example.com"
+          placeholder={t("contact.emailPlaceholder")}
         />
-        <ValidationError field="email" prefix="Email" errors={state.errors} />
+        <ValidationError field="email" prefix={t("contact.emailLabel")} errors={state.errors} />
       </div>
 
       <div className="flex flex-col gap-1.5">
@@ -63,7 +65,7 @@ export default function ContactForm() {
           htmlFor="message"
           className="text-sm font-medium text-text-muted"
         >
-          Message
+          {t("contact.messageLabel")}
         </label>
         <textarea
           id="message"
@@ -71,11 +73,11 @@ export default function ContactForm() {
           required
           rows={5}
           className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-accent"
-          placeholder="Tell Omer about your current site and what you need..."
+          placeholder={t("contact.messagePlaceholder")}
         />
         <ValidationError
           field="message"
-          prefix="Message"
+          prefix={t("contact.messageLabel")}
           errors={state.errors}
         />
       </div>
@@ -85,15 +87,15 @@ export default function ContactForm() {
           htmlFor="currentSite"
           className="text-sm font-medium text-text-muted"
         >
-          Current site URL{" "}
-          <span className="text-xs text-white/40">(optional)</span>
+          {t("contact.siteUrlLabel")}{" "}
+          <span className="text-xs text-white/40">{t("contact.siteUrlOptional")}</span>
         </label>
         <input
           id="currentSite"
           type="url"
           name="currentSite"
           className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-accent"
-          placeholder="https://yoursite.com"
+          placeholder={t("contact.siteUrlPlaceholder")}
         />
       </div>
 
@@ -107,7 +109,7 @@ export default function ContactForm() {
 
       {state.errors && Object.keys(state.errors).length > 0 && (
         <p role="alert" className="text-sm text-red-400">
-          Something went wrong. Please try again.
+          {t("contact.error")}
         </p>
       )}
 
@@ -116,7 +118,7 @@ export default function ContactForm() {
         disabled={state.submitting}
         className="gradient-btn rounded-lg px-6 py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50"
       >
-        {state.submitting ? "Sending..." : "Send Message"}
+        {state.submitting ? t("contact.submitting") : t("contact.submit")}
       </button>
     </form>
   );

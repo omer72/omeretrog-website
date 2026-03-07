@@ -1,14 +1,16 @@
 import AboutHero from "../components/about/AboutHero";
+import { useLocale } from "../i18n/LocaleContext";
 
 export default function AboutPage() {
+  const { t } = useLocale();
   return (
     <>
-      <title>About Omer Etrog | Web Migration Specialist</title>
+      <title>{t("about.title")}</title>
       <meta
         name="description"
-        content="Meet Omer Etrog — web migration specialist who transforms outdated Wix sites into modern, high-performance websites."
+        content={t("about.description")}
       />
-      <link rel="canonical" href="https://omeretrog.com/about" />
+      <link rel="canonical" href="https://omer72.github.io/omeretrog-website/about" />
       <AboutHero />
     </>
   );

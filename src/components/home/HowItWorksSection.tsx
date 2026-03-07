@@ -1,5 +1,6 @@
 import type { HowItWorksStep } from "../../content/how-it-works";
 import ScrollReveal from "../ui/ScrollReveal";
+import { useLocale } from "../../i18n/LocaleContext";
 
 interface HowItWorksSectionProps {
   steps: HowItWorksStep[];
@@ -30,6 +31,7 @@ function StepIcon({ icon }: { icon: HowItWorksStep["icon"] }) {
 }
 
 export default function HowItWorksSection({ steps }: HowItWorksSectionProps) {
+  const { t } = useLocale();
   return (
     <section aria-labelledby="how-it-works-heading" className="bg-surface-alt py-20">
       <div className="mx-auto max-w-5xl px-4 md:px-8">
@@ -37,7 +39,7 @@ export default function HowItWorksSection({ steps }: HowItWorksSectionProps) {
           id="how-it-works-heading"
           className="mb-12 text-center text-3xl font-bold md:text-4xl"
         >
-          How It Works
+          {t("howItWorks.heading")}
         </h2>
 
         <div className="grid gap-8 md:grid-cols-3">

@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router";
-
-const navLinks = [
-  { to: "/", label: "Home", end: true },
-  { to: "/work", label: "Work" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
-];
+import { useLocale } from "../../i18n/LocaleContext";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, locale, setLocale } = useLocale();
+
+  const navLinks = [
+    { to: "/", label: t("nav.home"), end: true },
+    { to: "/work", label: t("nav.work") },
+    { to: "/about", label: t("nav.about") },
+    { to: "/contact", label: t("nav.contact") },
+  ];
 
   const linkClasses = ({ isActive }: { isActive: boolean }) =>
     `transition-colors ${
@@ -17,6 +19,8 @@ export default function Nav() {
         ? "text-accent font-semibold"
         : "text-text-muted hover:text-accent-hover"
     }`;
+
+  const toggleLocale = () => setLocale(locale === "en" ? "he" : "en");
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-sm">
@@ -36,11 +40,18 @@ export default function Nav() {
               </li>
             ))}
           </ul>
+          <button
+            type="button"
+            onClick={toggleLocale}
+            className="text-sm text-text-muted hover:text-accent-hover transition-colors"
+          >
+            {t("lang.switch")}
+          </button>
           <Link
             to="/contact"
             className="gradient-btn rounded-full px-4 py-1.5 text-sm font-semibold text-white"
           >
-            Book a Call
+            {t("nav.bookACall")}
           </Link>
         </div>
 
@@ -52,7 +63,7 @@ export default function Nav() {
           aria-controls="mobile-menu"
           onClick={() => setIsOpen((prev) => !prev)}
         >
-          <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
+          <span className="sr-only">{isOpen ? t("nav.closeMenu") : t("nav.openMenu")}</span>
           <svg
             className="h-6 w-6"
             fill="none"
@@ -85,12 +96,21 @@ export default function Nav() {
             </li>
           ))}
           <li>
+            <button
+              type="button"
+              onClick={() => { toggleLocale(); setIsOpen(false); }}
+              className="block py-2 text-sm text-text-muted hover:text-accent-hover transition-colors"
+            >
+              {t("lang.switch")}
+            </button>
+          </li>
+          <li>
             <Link
               to="/contact"
               className="mt-2 inline-block gradient-btn rounded-full px-4 py-1.5 text-sm font-semibold text-white"
               onClick={() => setIsOpen(false)}
             >
-              Book a Call
+              {t("nav.bookACall")}
             </Link>
           </li>
         </ul>

@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     sitemap({
-      hostname: "https://omeretrog.com",
+      hostname: "https://omer72.github.io/omeretrog-website",
       dynamicRoutes: ["/", "/work", "/about", "/contact"],
     }),
   ],
