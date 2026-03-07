@@ -9,7 +9,13 @@
       "WebFetch(domain:www.liatleshem.com)",
       "WebFetch(domain:liatleshem.netlify.app)",
       "WebFetch(domain:www.bialystokvicinityexpatsisrael.org.il)",
-      "WebFetch(domain:bialystoksite.netlify.app)"
+      "WebFetch(domain:bialystoksite.netlify.app)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)"
     ]
   }
 }
