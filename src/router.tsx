@@ -12,24 +12,27 @@ const PageFallback = (
   <div className="flex-1" aria-label="Loading page..." />
 );
 
-export const router = createBrowserRouter([
-  {
-    element: <RootLayout />,
-    children: [
-      { path: "/", element: <HomePage /> },
-      {
-        path: "/work",
-        element: <Suspense fallback={PageFallback}><WorkPage /></Suspense>,
-      },
-      {
-        path: "/about",
-        element: <Suspense fallback={PageFallback}><AboutPage /></Suspense>,
-      },
-      {
-        path: "/contact",
-        element: <Suspense fallback={PageFallback}><ContactPage /></Suspense>,
-      },
-      { path: "*", element: <NotFoundPage /> },
-    ],
-  },
-]);
+export const router = createBrowserRouter(
+  [
+    {
+      element: <RootLayout />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        {
+          path: "/work",
+          element: <Suspense fallback={PageFallback}><WorkPage /></Suspense>,
+        },
+        {
+          path: "/about",
+          element: <Suspense fallback={PageFallback}><AboutPage /></Suspense>,
+        },
+        {
+          path: "/contact",
+          element: <Suspense fallback={PageFallback}><ContactPage /></Suspense>,
+        },
+        { path: "*", element: <NotFoundPage /> },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL },
+);
