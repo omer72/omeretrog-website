@@ -1,0 +1,42 @@
+# Omer Etrog — Web Migration Specialist
+
+> Omer Etrog specializes in migrating outdated Wix websites to modern, high-performance tech stacks. Full content migration in under an hour.
+
+## About
+
+Omer Etrog is a web migration specialist based in Israel. He transforms legacy Wix sites into fast, modern websites using React, TypeScript, and Vite. Most migrations are completed in under an hour — including full content transfer, responsive design, and a live URL.
+
+## Services
+
+- **Modern Web Migration**: Outdated Wix sites rebuilt with React + TypeScript + Vite
+- **Full Content Transfer**: Every page, image, and blog post migrated automatically
+- **Performance Optimization**: Lighthouse scores consistently 95+
+- **Bilingual Support**: Hebrew (RTL) and English
+- **AI-Powered Development**: Using Claude Code and AI tools to accelerate delivery
+
+## Portfolio Highlights
+
+- **Liat Leshem**: Wix to modern site migration with before/after comparison
+- **Bialystok Jewish Heritage**: Nonprofit legacy site migrated with React 18, Express backend, JWT auth, JSON-based CMS. Lighthouse: Performance 99, Accessibility 100, Best Practices 96, SEO 100.
+- **AppCard Parking**: Single-page application showcase
+
+## Blog / Insights
+
+### Building a JWT Chrome Extension with AI in Minutes (March 1, 2026)
+Built a Chrome extension using Claude that automatically detects and decodes JWT tokens from browser cookies and DevTools. Turned a repetitive daily workflow into an instant productivity win.
+
+### Migrating a Nonprofit's Legacy Wix Site with Claude Code (March 3, 2026)
+Migrated the Bialystok Jewish Heritage nonprofit site from Wix to React 18 + TypeScript + Vite with Express backend, JWT authentication, JSON-based CMS, and bilingual Hebrew/English support. Achieved Lighthouse scores of 99/100/96/100.
+
+## Contact
+
+- Website: https://omer72.github.io/omeretrog-website/
+- LinkedIn: https://www.linkedin.com/in/omer72
+- Contact page: https://omer72.github.io/omeretrog-website/contact
+
+## Technical Details
+
+- Site: https://omer72.github.io/omeretrog-website/
+- Stack: React 19, TypeScript, Vite, Tailwind CSS v4, Framer Motion
+- Hosting: GitHub Pages
+- Languages: English, Hebrew (RTL)

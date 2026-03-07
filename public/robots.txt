@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omeretrog.com/sitemap.xml
+Sitemap: https://omer72.github.io/omeretrog-website/sitemap.xml
