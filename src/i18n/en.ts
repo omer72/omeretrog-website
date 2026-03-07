@@ -4,6 +4,7 @@ const en: Record<string, string> = {
   "nav.work": "Work",
   "nav.about": "About",
   "nav.contact": "Contact",
+  "nav.blog": "Blog",
   "nav.bookACall": "Book a Call",
   "nav.openMenu": "Open menu",
   "nav.closeMenu": "Close menu",
@@ -73,6 +74,15 @@ const en: Record<string, string> = {
   "contact.error": "Something went wrong. Please try again.",
   "contact.openCalendar": "Open Booking Calendar",
   "contact.preferBook": "Prefer to book a time directly?",
+
+  // Blog page
+  "blog.title": "Blog | Omer Etrog",
+  "blog.description":
+    "Thoughts on web development, AI-powered productivity, and modern web migration.",
+  "blog.heading": "Blog",
+  "blog.subtitle":
+    "Thoughts on web development, AI-powered productivity, and building better tools.",
+  "blog.viewOnLinkedIn": "View on LinkedIn",
 
   // Footer
   "footer.ctaHeading": "Ready to upgrade your site?",

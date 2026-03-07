@@ -11,6 +11,7 @@ export default function Nav() {
     { to: "/work", label: t("nav.work") },
     { to: "/about", label: t("nav.about") },
     { to: "/contact", label: t("nav.contact") },
+    { to: "/blog", label: t("nav.blog") },
   ];
 
   const linkClasses = ({ isActive }: { isActive: boolean }) =>

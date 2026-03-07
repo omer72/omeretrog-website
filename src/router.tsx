@@ -7,6 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 const WorkPage = lazy(() => import("./pages/WorkPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const BlogPage = lazy(() => import("./pages/BlogPage"));
 
 const PageFallback = (
   <div className="flex-1" aria-label="Loading page..." />
@@ -29,6 +30,10 @@ export const router = createBrowserRouter(
         {
           path: "/contact",
           element: <Suspense fallback={PageFallback}><ContactPage /></Suspense>,
+        },
+        {
+          path: "/blog",
+          element: <Suspense fallback={PageFallback}><BlogPage /></Suspense>,
         },
         { path: "*", element: <NotFoundPage /> },
       ],

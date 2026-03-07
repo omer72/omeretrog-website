@@ -4,6 +4,7 @@ const he: Record<string, string> = {
   "nav.work": "עבודות",
   "nav.about": "אודות",
   "nav.contact": "צור קשר",
+  "nav.blog": "בלוג",
   "nav.bookACall": "קביעת שיחה",
   "nav.openMenu": "פתח תפריט",
   "nav.closeMenu": "סגור תפריט",
@@ -73,6 +74,15 @@ const he: Record<string, string> = {
   "contact.error": "משהו השתבש. נסו שוב.",
   "contact.openCalendar": "פתח יומן קביעת פגישות",
   "contact.preferBook": "מעדיפים לקבוע זמן ישירות?",
+
+  // Blog page
+  "blog.title": "בלוג | עומר אתרוג",
+  "blog.description":
+    "מחשבות על פיתוח אתרים, פרודוקטיביות בעזרת AI, והעברת אתרים מודרנית.",
+  "blog.heading": "בלוג",
+  "blog.subtitle":
+    "מחשבות על פיתוח אתרים, פרודוקטיביות בעזרת AI, ובניית כלים טובים יותר.",
+  "blog.viewOnLinkedIn": "צפה בלינקדאין",
 
   // Footer
   "footer.ctaHeading": "מוכנים לשדרג את האתר?",
