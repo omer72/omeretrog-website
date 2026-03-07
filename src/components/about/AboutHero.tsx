@@ -21,7 +21,7 @@ export default function AboutHero() {
               }}
             />
             <img
-              src="/omer-profile.png"
+              src={`${import.meta.env.BASE_URL}omer-profile.png`}
               alt="Omer Etrog, web migration specialist"
               className="relative mx-auto w-full max-w-sm rounded-2xl"
             />
