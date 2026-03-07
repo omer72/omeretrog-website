@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "vite-plugin-sitemap";
 
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS ? "/omeretrog-website/" : "/",
   plugins: [
     react(),
     tailwindcss(),
