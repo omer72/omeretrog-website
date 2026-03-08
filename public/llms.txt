@@ -22,6 +22,9 @@ Omer Etrog is a web migration specialist based in Israel. He transforms legacy W
 
 ## Blog / Insights
 
+### Upgrading a Legacy Flutter iPad App to Flutter 3.41 with Claude Code (March 8, 2026)
+Upgraded an iPad loyalty/rewards app from an older Flutter SDK to Flutter 3.41 (Dart 3.11) — 45 modified files across 3 local packages. Null-safety migration, API replacements, data model restructuring, iOS deployment target bump, and network layer debugging. Used parallel agents for bulk modifications and iterated build-test cycles to zero compilation errors.
+
 ### Building a JWT Chrome Extension with AI in Minutes (March 1, 2026)
 Built a Chrome extension using Claude that automatically detects and decodes JWT tokens from browser cookies and DevTools. Turned a repetitive daily workflow into an instant productivity win.
 

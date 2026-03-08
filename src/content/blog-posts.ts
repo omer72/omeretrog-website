@@ -11,6 +11,33 @@ export interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "flutter-legacy-upgrade",
+    date: "2026-03-08",
+    tags: ["Claude Code", "AI", "Flutter", "Mobile Development", "iOS", "Dart", "Tech Debt", "Code Migration"],
+    linkedInUrl:
+      "https://www.linkedin.com/posts/omer72_claudecode-ai-flutter-share-7436292249270861824-7WVx",
+    title: {
+      en: "Upgrading a Legacy Flutter iPad App to Flutter 3.41 with Claude Code",
+      he: "שדרוג אפליקציית Flutter ישנה ל-iPad עם Claude Code",
+    },
+    body: {
+      en: `Just finished upgrading an iPad loyalty/rewards app from an older Flutter SDK to Flutter 3.41 (Dart 3.11) — approximately 45 modified files across 3 local packages.
+
+Key changes: null-safety migration across 30+ files with type adjustments, API replacements (WebView to WebViewWidget, QRView to MobileScanner, launch() to launchUrl()), core data model restructuring to eliminate downstream errors, iOS deployment target bumped from 13.0 to 15.5, router dependency upgrade (fluro 2.0.3 to 2.0.5), widget requirement fixes for newer Flutter versions, and network layer debugging enhancements.
+
+My approach: fix at the source where possible, use parallel agents for bulk modifications, and iterate through build-test cycles until achieving zero compilation errors on the iOS simulator.
+
+Another example of how AI-powered development turns weeks of tedious tech debt work into a focused, efficient process.`,
+      he: `סיימתי לשדרג אפליקציית נאמנות/תגמולים ל-iPad מגרסת Flutter ישנה ל-Flutter 3.41 (Dart 3.11) — כ-45 קבצים ששונו ב-3 חבילות מקומיות.
+
+שינויים מרכזיים: מעבר ל-null-safety ביותר מ-30 קבצים עם התאמות טיפוסים, החלפת API-ים (WebView ל-WebViewWidget, QRView ל-MobileScanner, launch() ל-launchUrl()), מבנה מחדש של מודל הנתונים המרכזי, העלאת יעד הפריסה ל-iOS מ-13.0 ל-15.5, שדרוג תלות ראוטר (fluro 2.0.3 ל-2.0.5), תיקוני דרישות ווידג'טים לגרסאות Flutter חדשות, ושיפורי דיבאג בשכבת הרשת.
+
+הגישה שלי: לתקן במקור כשאפשר, להשתמש בסוכנים מקבילים לשינויים בכמויות, ולעבור מחזורי בנייה-בדיקה עד להגעה לאפס שגיאות קומפילציה בסימולטור iOS.
+
+עוד דוגמה לאיך פיתוח מונע AI הופך שבועות של עבודת חוב טכני מייגעת לתהליך ממוקד ויעיל.`,
+    },
+  },
+  {
     id: "bialystok-wix-migration",
     date: "2026-03-03",
     tags: ["Claude Code", "AI", "Web Development", "React", "TypeScript", "Wix Migration", "Performance", "Accessibility"],
